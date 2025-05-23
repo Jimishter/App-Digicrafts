@@ -10,6 +10,9 @@ body{
     background: #fff;
     height: 100%;
 }
+.row{
+    margin: 0;
+}
 .headerSection{
     background: url(../images/banner.jpg) no-repeat center center;
     background-size: 100% 100%;
