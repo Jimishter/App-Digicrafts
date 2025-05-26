@@ -64,7 +64,9 @@
   .ff-values {
     font-size: 23px !important;
   }
-
+  .servInfo {
+    width: 100% !important;
+  }
   .servInfo .card-title {
     font-size: 25px !important;
     font-weight: 700 !important;
@@ -144,7 +146,9 @@
   .ff-values {
     font-size: 23px !important;
   }
-
+  .servInfo {
+    width: 100% !important;
+  }
   .servInfo .card-title {
     font-size: 25px !important;
     font-weight: 700 !important;
@@ -224,7 +228,9 @@
   .ff-values {
     font-size: 23px !important;
   }
-
+  .servInfo {
+    width: 100% !important;
+  }
   .servInfo .card-title {
     font-size: 25px !important;
     font-weight: 700 !important;
@@ -309,7 +315,9 @@
   .ff-values {
     font-size: 23px !important;
   }
-
+  .servInfo {
+    width: 100% !important;
+  }
   .servInfo .card-title {
     font-size: 25px !important;
     font-weight: 700 !important;

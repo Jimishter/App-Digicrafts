@@ -127,7 +127,7 @@ body{
 .servicesSection{
     background: url(../images/Ellipse.png) no-repeat -219px 23px;
     background-size: 115%;
-    height: 700px;
+    height: auto;
 
     .customHeading{
         flex: none;
