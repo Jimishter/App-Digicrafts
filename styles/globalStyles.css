@@ -65,6 +65,8 @@ body{
 }
 .fw-velocity{
     font-family: robotoSerifLight;
+    font-size: 48px !important;
+    line-height: 56px;
 }
 .ff-values,
 .ff-services,
@@ -73,13 +75,19 @@ body{
     font-family: robotoSerifLight;
     font-size: 4em;
 }
-
+.ff-crafting{
+    margin-top: 2em;
+}
+.txt-service{
+    line-height: 53px;
+}
 .ff-worldEvolves{
     font-size: 6em;
 }
 .ff-values,
 .txt-service{
-    font-size: 5em;
+    font-size: 6em;
+    line-height: 72px;
 }
 .ff-caseStudy{
     font-size: 3.5em;    
@@ -137,5 +145,11 @@ body{
     background: #3B3B3B;
 }
 .servInfo{
-    width: 39% !important;
+    width: 50% !important;
+}
+.servInfo .card-title{
+    font-size: 48px;
+}
+.servInfo .card-text{
+    font-size: 24px;
 }

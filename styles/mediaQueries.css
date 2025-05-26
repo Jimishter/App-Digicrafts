@@ -64,12 +64,18 @@
   .ff-values {
     font-size: 23px !important;
   }
+
   .servInfo {
     width: 100% !important;
   }
+
   .servInfo .card-title {
     font-size: 25px !important;
     font-weight: 700 !important;
+    text-align: center !important;
+  }
+
+  .servInfo .card-text {
     text-align: center !important;
   }
 
@@ -77,6 +83,10 @@
     display: block !important;
     text-align: center !important;
     font-size: 33px !important;
+  }
+
+  .ff-crafting {
+    margin-top: 0;
   }
 }
 
@@ -146,12 +156,18 @@
   .ff-values {
     font-size: 23px !important;
   }
+
   .servInfo {
     width: 100% !important;
   }
+
   .servInfo .card-title {
     font-size: 25px !important;
     font-weight: 700 !important;
+    text-align: center !important;
+  }
+
+  .servInfo .card-text {
     text-align: center !important;
   }
 
@@ -159,6 +175,10 @@
     display: block !important;
     text-align: center !important;
     font-size: 33px !important;
+  }
+
+  .ff-crafting {
+    margin-top: 0;
   }
 }
 
@@ -228,12 +248,18 @@
   .ff-values {
     font-size: 23px !important;
   }
+
   .servInfo {
     width: 100% !important;
   }
+
   .servInfo .card-title {
     font-size: 25px !important;
     font-weight: 700 !important;
+    text-align: center !important;
+  }
+
+  .servInfo .card-text {
     text-align: center !important;
   }
 
@@ -241,6 +267,10 @@
     display: block !important;
     text-align: center !important;
     font-size: 33px !important;
+  }
+
+  .ff-crafting {
+    margin-top: 0;
   }
 }
 
@@ -315,12 +345,18 @@
   .ff-values {
     font-size: 23px !important;
   }
+
   .servInfo {
     width: 100% !important;
   }
+
   .servInfo .card-title {
     font-size: 25px !important;
     font-weight: 700 !important;
+    text-align: center !important;
+  }
+
+  .servInfo .card-text {
     text-align: center !important;
   }
 
@@ -328,6 +364,10 @@
     display: block !important;
     text-align: center !important;
     font-size: 33px !important;
+  }
+
+  .ff-crafting {
+    margin-top: 0;
   }
 }
 
