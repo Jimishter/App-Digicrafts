@@ -1,3 +1,20 @@
+@font-face {
+  font-family: robotoRegular;
+  src: url(/customFonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: robotoBold;
+  src: url(/customFonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: robotoExtraBold;
+  src: url(/customFonts/Roboto-ExtraBold.ttf);
+}
+@font-face {
+  font-family: robotoSerifLight;
+  src: url(/customFonts/RobotoSerif-Light.ttf);
+}
+
 *{
     border: none;
     margin: 0;
@@ -16,14 +33,109 @@ body{
 .headerSection{
     background: url(../images/banner.jpg) no-repeat center center;
     background-size: 100% 100%;
-    height:700px;
+    height:1372px;
+}
+.bg-warning{
+    background-color: #F7C108 !important
+}
+.nav-pills .nav-link.active{
+    background: none !important;
+    border: 2px solid #000 !important;
+}
+.text-warning{
+    color: #F7C108 !important;
+    font-size: 5.75em;
 }
 .nav-link{
     color: #000;
 }
-@media (min-width: 1200px) {
-    .navbar-expand-xl .navbar-collapse {
-        display: contents !important;
-        flex-basis: auto;
+.bannerInfo{
+    margin-top: -18%;
+}
+.buttonSec .btn{
+    width: 202px !important;
+}
+.bannerInfo .card{
+    border: 0;
+    border-right: 1px dashed #000 !important;
+    font-size: 25px;
+}
+.bannerInfo .card:last-child{
+    border: 0 !important;
+}
+.fw-velocity{
+    font-family: robotoSerifLight;
+}
+.ff-values,
+.ff-services,
+.ff-worldEvolves,
+.ff-crafting{
+    font-family: robotoSerifLight;
+    font-size: 4em;
+}
+
+.ff-worldEvolves{
+    font-size: 6em;
+}
+.ff-values,
+.txt-service{
+    font-size: 5em;
+}
+.ff-caseStudy{
+    font-size: 3.5em;    
+    font-weight: bolder; 
+}
+.btn-send{
+    border-radius: 0.5em !important;
+    font-size: 1.5em;
+}
+.gridInfo .border-bottom{
+    border-bottom: 1px solid #000 !important;
+}
+.gridInfo h5{
+    font-size: 1.6em !important;
+}
+.gridInfo p{
+    font-size: 1.6em !important;
+}
+.gridBanner{
+    height: 99.5%;
+}
+.gridBanner .card-body.bg-warning{
+    background-color: #F7C108;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.postSection{
+    border-bottom: 16px solid #F7C108 !important;
+}
+.bannerDetails{
+    .card-title{
+        font-size: 4em;
     }
+    .btn-outline-secondary{
+        border: 2px solid #000 !important;
+    }
+    p{
+        /* font-size: 1em; */
+    }
+}
+#toggle-cards .card:not(:first-child) {
+    display:none
+}
+.servicesSection{
+    background: url(../images/Ellipse.png) no-repeat -219px 23px;
+    background-size: 115%;
+    height: 700px;
+
+    .customHeading{
+        flex: none;
+    }
+}
+.card-footer{
+    background: #3B3B3B;
+}
+.servInfo{
+    width: 39% !important;
 }
