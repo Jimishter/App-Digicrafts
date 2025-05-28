@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/bootstrap.min.css" />
     <link rel="stylesheet" href="styles/globalStyles.css" />
     <link rel="stylesheet" href="styles/mediaQueries-m.css" />
-    <link rel="stylesheet" href="styles/mediaQueries-t.css" />
+    <link rel="stylesheet" href="styles/customCarous.css" />
 </head>
 
 <body class="bg-white">
@@ -79,10 +79,12 @@
             </div>
             <!-- END bannerInfo -->
 
-            <div class="evolvesInfo card bg-transparent mt-0 mt-sm-0 mt-md-0 mt-lg-0 mt-xl-5  mt-xxl-5 pt-0 pt-sm-0 pt-md-0 pt-lg-0 pt-xl-5 pt-xxl-5 border-0">
+            <div
+                class="evolvesInfo card bg-transparent mt-0 mt-sm-0 mt-md-0 mt-lg-0 mt-xl-5  mt-xxl-5 pt-0 pt-sm-0 pt-md-0 pt-lg-0 pt-xl-5 pt-xxl-5 border-0">
                 <div class="card-header border-0 bg-white">
                     <h1 class="ff-worldEvolves text-center fw-normal text-dark card-title">As the world evolves</h1>
-                    <h1 class="text-yellow text-center card-title text-warning fw-bolder">and so are we, with expertise that keeps pace.</h1>
+                    <h1 class="text-yellow text-center card-title text-warning fw-bolder">and so are we, with expertise
+                        that keeps pace.</h1>
                 </div>
                 <div class="card-body p-0">
                     <div class="row g-0">
@@ -134,69 +136,67 @@
                 </div>
             </div>
 
-            <div
-                class="postSection card border-0 mx-0 mx-sm-0 mx-md-0 mx-lg-5 mx-xl-5 mx-xxl-5 my-5 py-5 border-bottom">
-                <div class="card-body">
-                    <div class="bannerDetails card border-0 clearfix">
-                        <nav class="nav nav-pills clearfix" id="pills-tab" role="tablist">
-                            <a class="isPrev nav-link rounded-pill active" id="pills-home-tab" data-bs-toggle="pill"
-                                href="#pills-prev" role="tab" aria-controls="pills-prev" aria-selected="true">
-                                <img src="./images/icon_Prev.png" alt="Previous" />
-                            </a>
 
-                            <a class="isNext rounded-pill nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                                href="#pills-next" role="tab" aria-controls="pills-next" aria-selected="false">
-                                <img src="./images/icon_Next.png" alt="Next" />
-                            </a>
-                        </nav>
-                        <div class="tab-content mt-5 mt-sm-5 mt-md-5 mt-lg-5 mt-xl-5 mt-xxl-5 pt-0 pt-sm-0 pt-md-0 pt-lg-0 pt-xl-5 pt-xxl-5" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-prev" role="tabpanel"
-                                aria-labelledby="pills-prev-tab">
-                                <div class="row g-0">
-                                    <div class="row col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
-                                        <h1 class="reducedManual card-title fw-normal mb-5">Reduced manual errors by 60%</h1>
-                                    </div>
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-xxl-9">
-                                        <div class="card-body">
-                                            <p
-                                                class="card-text px-0 0 px-lg-5 px-xl-5 px-xxl-5 0 px-lg-5 px-xl-5 px-xxl-5 fs-3 col-9 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-xxl-9">
-                                                A mid-sized logistics company streamlined its warehouse operations by
-                                                implementing automation tools, including barcode scanning and real-time
-                                                inventory tracking. This reduced manual errors by 60% and improved order
-                                                processing speed by 40%. With automated workflows...</p>
-                                        </div>
-                                    </div>
-                                    <div class="buttonSec">
-                                        <button type="button"
-                                            class="btn btn-outline-secondary w-50 rounded-pill text-uppercase fs-5 text-dark p-3">Learn More</button>
+            <div class="postSection container-fluid carousel-container">
+                <div class="carousel-slide" id="carouselSlide">
+                    <div class="carousel-item-custom">
+                        <div class="card-body">
+                            <div class="row g-0">
+                                <div class="row col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
+                                    <h1 class="reducedManual card-title fw-normal mb-5">Reduced manual
+                                        errors by 60%</h1>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-xxl-9">
+                                    <div class="card-body">
+                                        <!-- <p class="card-text px-0 0 px-lg-5 px-xl-5 px-xxl-5 0 px-lg-5 px-xl-5 px-xxl-5 fs-3 col-9 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-xxl-9"> -->
+                                        <p class="card-text fs-3">
+                                            A mid-sized logistics company streamlined its warehouse
+                                            operations by
+                                            implementing automation tools, including barcode scanning
+                                            and real-time
+                                            inventory tracking. This reduced manual errors by 60% and
+                                            improved order
+                                            processing speed by 40%. With automated workflows...</p>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="tab-pane fade" id="pills-next" role="tabpanel" aria-labelledby="pills-next-tab">
-                                <div class="row g-0">
-                                    <div class="row col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
-                                        <h1 class="card-title fw-normal mb-5">Reduced manual errors by 60%</h1>
-                                    </div>
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-xxl-9">
-                                        <div class="card-body">
-                                            <p
-                                                class="card-text px-0 0 px-lg-5 px-xl-5 px-xxl-5 0 px-lg-5 px-xl-5 px-xxl-5 fs-3 col-9 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-xxl-9">
-                                                A mid-sized logistics company streamlined its warehouse operations by
-                                                implementing automation tools, including barcode scanning and real-time
-                                                inventory tracking. This reduced manual errors by 60% and improved order
-                                                processing speed by 40%. With automated workflows...</p>
-                                        </div>
-                                    </div>
-                                    <div class="buttonSec">
-                                        <button type="button"
-                                            class="btn btn-outline-secondary w-50 rounded-pill text-uppercase fs-5 text-dark p-3">Learn More</button>
-                                    </div>
+                                <div class="buttonSec float-start w-25">
+                                    <button type="button"
+                                        class="btn btn-outline-secondary w-50 rounded-pill text-uppercase fs-5 text-dark p-3 float-start">Learn
+                                        More</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="carousel-item-custom">
+                        <div class="row g-0">
+                            <div class="row col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
+                                <h1 class="reducedManual card-title fw-normal mb-5">Reduced manual
+                                    errors by 60%</h1>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-xxl-9">
+                                <div class="card-body">
+                                    <p class="card-text fs-3">
+                                    <!-- <p class="card-text px-0 0 px-lg-5 px-xl-5 px-xxl-5 0 px-lg-5 px-xl-5 px-xxl-5 fs-3 col-9 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-xxl-9"> -->
+                                        A mid-sized logistics company streamlined its warehouse
+                                        operations by
+                                        implementing automation tools, including barcode scanning
+                                        and real-time
+                                        inventory tracking. This reduced manual errors by 60% and
+                                        improved order
+                                        processing speed by 40%. With automated workflows...</p>
+                                </div>
+                            </div>
+                            <div class="buttonSec float-start w-25">
+                                <button type="button"
+                                    class="btn btn-outline-secondary w-50 rounded-pill text-uppercase fs-5 text-dark p-3 float-start">Learn
+                                    More</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="dots mt-3 float-end" id="dotsContainer"></div>
             </div>
 
             <div class="servicesSection card border-0 px-5">
@@ -210,7 +210,8 @@
                     </h1>
                 </div>
 
-                <div class="row row-cols-1 row-cols-sm-2 g-3 mx-0 mx-sm-0 mx-md-0 mx-lg-5 mx-xl-5 mx-xxl-5 my-5 py-0 0 py-lg-5 py-xl-5 py-xxl-5 0 py-lg-5 py-xl-5 py-xxl-5">                   
+                <div
+                    class="row row-cols-1 row-cols-sm-2 g-3 mx-0 mx-sm-0 mx-md-0 mx-lg-5 mx-xl-5 mx-xxl-5 my-5 py-0 0 py-lg-5 py-xl-5 py-xxl-5 0 py-lg-5 py-xl-5 py-xxl-5">
                     <div class="col">
                         <div class="servInfo card bg-transparent border-0 float-end">
                             <div class="card-body">
@@ -253,14 +254,19 @@
                 <div class="row g-0">
                     <!-- <div class="mx-auto"> -->
                     <!-- <div class="col-5 col-sm-4 ms-5"> -->
-                    <div class="col-0 col-sm-0 col-md-0 col-lg-4 col-xl-4 col-xxl-4 ms-0 ms-sm-0  ms-md-0  ms-lg-5  ms-xl-5  ms-xxl-5">
+                    <div
+                        class="col-0 col-sm-0 col-md-0 col-lg-4 col-xl-4 col-xxl-4 ms-0 ms-sm-0  ms-md-0  ms-lg-5  ms-xl-5  ms-xxl-5">
                         <!-- <div class="card-body p-5 ms-5 mt-5"> -->
-                        <div class="card-body ms-0 ms-sm-0 ms-md-0 ms-lg-5 ms-xl-5 ms-xxl-5 my-5 p-0 p-lg-5 p-xl-5 p-xxl-5 0 p-lg-5 p-xl-5 p-xxl-5">
-                            <p class="fw-velocity card-text text-white fs-2 fw-normal mb-0">For unprecedented Velocity. Impeccable
+                        <div
+                            class="card-body ms-0 ms-sm-0 ms-md-0 ms-lg-5 ms-xl-5 ms-xxl-5 my-5 p-0 p-lg-5 p-xl-5 p-xxl-5 0 p-lg-5 p-xl-5 p-xxl-5">
+                            <p class="fw-velocity card-text text-white fs-2 fw-normal mb-0">For unprecedented Velocity.
+                                Impeccable
                                 Reliability.</p>
                             <a href=""
-                                class="card-text text-white fs-1 fw-bolder text-warning text-decoration-none">Contact us</a>
-                            <div class="socialMediaSection card-body bg-white p-2 mt-5 w-50 text-center d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block ">
+                                class="card-text text-white fs-1 fw-bolder text-warning text-decoration-none">Contact
+                                us</a>
+                            <div
+                                class="socialMediaSection card-body bg-white p-2 mt-5 w-50 text-center d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block ">
                                 <a href="#">
                                     <img src="./images/iconsSocialMedia.png" alt="Social Media" srcset="" />
                                 </a>
@@ -268,7 +274,8 @@
                         </div>
                     </div>
                     <!-- <div class="col-5 col-sm-5 ms-5"> -->
-                    <div class="col-0 col-sm-0 col-md-0 col-lg-5 col-xl-5 col-xxl-5 ms-0 ms-sm-0  ms-md-0  ms-lg-5  ms-xl-5  ms-xxl-5">
+                    <div
+                        class="col-0 col-sm-0 col-md-0 col-lg-5 col-xl-5 col-xxl-5 ms-0 ms-sm-0  ms-md-0  ms-lg-5  ms-xl-5  ms-xxl-5">
                         <div class="card-body bg-transparent border-0 p-55">
                             <table class="table bg-transparent mt-0 mt-sm-0  mt-md-0  mt-lg-5  mt-xl-5  mt-xxl-5">
                                 <tbody>
