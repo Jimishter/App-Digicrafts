@@ -11,7 +11,7 @@
 
     .carousel-item-custom {
       min-width: 100%;
-      padding: 40px;
+      padding: 44px 6px 0px 6px;
       background-color: #f8f9fa;
       border-radius: 10px;
     }

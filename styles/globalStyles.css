@@ -1,4 +1,12 @@
 @font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(/customFonts/roboto.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
   font-family: robotoRegular;
   src: url(/customFonts/Roboto-Regular.ttf);
 }
@@ -30,10 +38,25 @@ body{
 .row{
     margin: 0;
 }
+.container{
+    width: 1728px !important;
+}
 .headerSection{
     background: url(../images/banner.png) no-repeat center center;
     background-size: 100% 100%;
     height:1372px;
+}
+.logoSection {
+    /* margin-top: 15px;
+    margin-left: 35px; */
+    margin-top: -17px;
+    margin-left: 22px;
+}
+.customNavBar{
+    ul{
+        margin-left: 8%;
+        margin-bottom: 2% !important;
+    }
 }
 .reducedManual{
     font-family: robotoSerifLight;
@@ -48,21 +71,43 @@ body{
 }
 .text-warning{
     color: #F7C108 !important;
+    font-family: Roboto;
     font-size: 5.75em;
 }
 .nav-link{
     color: #000;
 }
 .bannerInfo{
-    margin-top: -18%;
+    margin-top: -22%;
     padding-top: 3em;
+
+    .card-group{
+        /* margin-left: 67px; */
+    }
+    .card-title{
+        font-size: 48px !important;
+        margin-left: 10%;
+    }
+    .card-text{
+        font-size: 24px;
+        word-spacing: 3px;
+    }
+}
+.evolvesInfo{
+    font-family: serif;
+    margin-top: 1.75%;
+    .text-warning{
+        font-family: Roboto, Arial, Helvetica, sans-serif;
+        font-size: 96px;
+        line-height: 90px;
+    }
 }
 .buttonSec .btn{
     width: 202px !important;
 }
 .bannerInfo .card{
     border: 0;
-    border-right: 1px dashed #000 !important;
+    border-right: 2px dashed #000 !important;
     font-size: 25px;
 }
 .bannerInfo .card:last-child{
@@ -75,44 +120,63 @@ body{
 }
 .ff-values,
 .ff-services,
-.ff-worldEvolves,
 .ff-crafting{
     font-family: robotoSerifLight;
-    font-size: 4em;
+    font-size: 67px;
 }
 .ff-crafting{
-    margin-top: 2em;
+    font-family: robotoRegular;
+    margin-top: 8%;
+    margin-left: 2%;
+    font-size: 67px;
+    line-height: 73px;
+    letter-spacing: 4px;
 }
 .txt-service{
     line-height: 53px;
 }
 .ff-worldEvolves{
-    font-size: 6em;
+    font-family: Roboto;
+    font-size: 96px;
+    word-spacing: 32px;
 }
 .ff-values,
 .txt-service{
-    font-size: 6em;
+    font-size: 96px;
     line-height: 72px;
 }
 .ff-caseStudy{
-    font-size: 3.5em;    
+    font-size: 48px;    
     font-weight: bolder; 
 }
 .btn-send{
     border-radius: 0.5em !important;
     font-size: 1.5em;
 }
+.gridInfo *{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
 .gridInfo .border-bottom{
     border-bottom: 1px solid #000 !important;
 }
 .gridInfo h5{
-    font-size: 1.6em !important;
+    font-size: 24px !important;
 }
 .gridInfo p{
-    font-size: 1.6em !important;
+    font-size: 24px !important;
+}
+.casestudy{
+    max-height: 437px;
+    overflow: hidden;
+}
+.casestudyImage{
+    background: url(../images/imgBannerInfo.svg) no-repeat 47px 0;
+    background-size: 100% 100%;
+    height:438px;
 }
 .gridBanner{
-    height: 99.5%;
+    height: 437px;
+    width: 524px;
 }
 .gridBanner .card-body.bg-warning{
     background-color: #F7C108;
@@ -122,6 +186,16 @@ body{
 }
 .postSection{
     border-bottom: 16px solid #F7C108 !important;
+    height: 558px;
+    width: 90%;
+
+    .card-body{
+        width: 92%;
+        .card-text{
+            font-size: 24px;
+        }
+    }
+
 }
 .bannerDetails{
     .card-title{
@@ -141,6 +215,7 @@ body{
     background: url(../images/Ellipse.png) no-repeat -219px 23px;
     background-size: 115%;
     height: auto;
+    margin-top: 10%;
 
     .customHeading{
         flex: none;
@@ -149,12 +224,19 @@ body{
 .card-footer{
     background: #3B3B3B;
 }
-.servInfo{
-    width: 50% !important;
+.servInfo {
+    width: 58% !important;
+    margin-right: 9%;
+    margin-left: 22%;
 }
 .servInfo .card-title{
     font-size: 48px;
+    margin-bottom: 10%;
 }
 .servInfo .card-text{
     font-size: 24px;
+}
+.contact{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 48px;
 }

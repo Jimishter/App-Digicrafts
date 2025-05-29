@@ -1,45 +1,30 @@
-$(document).ready(function () {
-const slide = document.getElementById('carouselSlide');
-    const dotsContainer = document.getElementById('dotsContainer');
-    const totalSlides = slide.children.length;
-    let currentIndex = 0;
-    let intervalId;
+(function () {
+      'use strict'
 
-    function createDots() {
-      for (let i = 0; i < totalSlides; i++) {
-        const dot = document.createElement('span');
-        dot.classList.add('dot');
-        if (i === 0) dot.classList.add('active');
-        dot.addEventListener('click', () => {
-          moveToSlide(i);
-          resetAutoSlide();
-        });
-        dotsContainer.appendChild(dot);
-      }
-    }
+      const forms = document.querySelectorAll('.needs-validation')
 
-    function moveToSlide(index) {
-      slide.style.transform = `translateX(-${index * 100}%)`;
-      document.querySelector('.dot.active')?.classList.remove('active');
-      dotsContainer.children[index].classList.add('active');
-      currentIndex = index;
-    }
+      Array.from(forms).forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          const emailInput = form.querySelector('#email');
+          const emailValue = emailInput.value;
 
-    function autoSlide() {
-      currentIndex = (currentIndex + 1) % totalSlides;
-      moveToSlide(currentIndex);
-    }
+          // Optional: You can add a custom regex pattern if desired
+          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    function startAutoSlide() {
-      intervalId = setInterval(autoSlide, 5000);
-    }
+          if (!form.checkValidity() || !emailPattern.test(emailValue)) {
+            event.preventDefault();
+            event.stopPropagation();
 
-    function resetAutoSlide() {
-      clearInterval(intervalId);
-      startAutoSlide();
-    }
+            if (!emailPattern.test(emailValue)) {
+              emailInput.setCustomValidity("Invalid email format");
+            } else {
+              emailInput.setCustomValidity("");
+            }
+          } else {
+            emailInput.setCustomValidity("");
+          }
 
-    // Initialize
-    createDots();
-    startAutoSlide();
-})
+          form.classList.add('was-validated');
+        }, false)
+      })
+    })()
