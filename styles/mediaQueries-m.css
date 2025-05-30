@@ -403,14 +403,23 @@
 /* iPhone 14 Pro Max */
 @media only screen and (max-width: 430px) {
   .headerSection {
-    background: #ECEFFE url(../images/banner.png) no-repeat 50% 10% !important;
-    background-size: 100% 32% !important;
+    background: url(../images/banner.png) no-repeat 29% 0 !important;
+    background-size: 119% 85% !important;
     height: 857px;
+  }
+
+  .topSection {
+    padding-top: 30px;
+  }
+
+  .navbar-toggler {
+    border: none;
   }
 
   .navbar-collapse {
     position: absolute;
     top: 66px;
+    width: 100%;
   }
 
   .ff-crafting {
@@ -422,8 +431,16 @@
     font-size: calc(1.375rem + 0vw) !important;
   }
 
-  .bannerInfo .card-title {
-    font-size: calc(1.375rem + 0vw) !important;
+  .bannerInfo {
+    .card-title {
+      font-size: 22px !important;
+      font-weight: 900 !important;
+    }
+
+    .card-text {
+      font-size: 16px;
+      letter-spacing: normal;
+    }
   }
 
   .bannerInfo .card {
@@ -434,6 +451,13 @@
 
   .ff-worldEvolves {
     font-size: 32px !important;
+    word-spacing: 0;
+  }
+
+  .evolvesInfo {
+    .text-warning {
+      line-height: normal;
+    }
   }
 
   .ff-caseStudy {
@@ -444,6 +468,15 @@
   .ff-services {
     font-size: 32px !important;
     text-align: center !important;
+    margin-bottom: 51px;
+  }
+
+  .gridInfo {
+
+    h5,
+    p {
+      font-size: 16px !important;
+    }
   }
 
   .text-yellow {
@@ -453,6 +486,30 @@
   .gridInfo .card-body {
     font-size: 11px !important;
     text-align: center !important;
+    margin: 0 auto;
+    width: 92%;
+  }
+
+  .gridBanner .card-body.bg-warning {
+    font-size: 32px;
+    height: 40%;
+  }
+
+  .gridBanner {
+    height: auto;
+  }
+
+  .casestudyImage {
+    background: none;
+    height: auto;
+  }
+
+  .carousel-container {
+    width: 100%;
+  }
+
+  .imgBannerInfo {
+    display: block;
   }
 
   .postSection {
@@ -469,12 +526,18 @@
 
   .buttonSec {
     text-align: center !important;
+    float: none !important;
+    width: 100% !important;
+    margin-left: 130px !important;
   }
 
   .buttonSec .btn {
     font-size: 16px !important;
     margin: 0 auto !important;
     width: 137px !important;
+    font-weight: bold;
+    padding: 10px 0 !important;
+    border-color: #000;
   }
 
   .servicesSection {
@@ -493,43 +556,98 @@
   }
 
   .servInfo {
+    float: none !important;
+    margin: 0;
     width: 100% !important;
   }
 
   .servInfo .card-title {
-    font-size: 32px !important;
+    font-size: 7.4vw !important;
     font-weight: 700 !important;
     text-align: center !important;
   }
 
-  .servInfo .card-text {
+  /* .servInfo .card-text {
     font-size: 16px;
     text-align: center !important;
     width: 92%;
+  } */
+  .servInfo .card-text.fw-velocity {
+    font-size: 41px !important;
+    font-weight: normal !important;
   }
+
+  .servInfo .card-text.contact {
+    font-size: 41px !important;
+  }
+
 
   .formSection .card-text {
     display: block !important;
     text-align: center !important;
-    font-size: 33px !important;
+    font-size: 39px !important;
+  }
+
+  .desktop-view {
+    display: none;
+  }
+
+  .mobile-view {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+
+    .form-control-lg{
+      color: #000;
+      font-size: 12px;
+      padding: 1rem 1rem;
+    }
+    .btn-send{
+      margin: 0 auto;
+      width: 158px;
+    }
   }
 
   .ff-crafting {
+    font-size: 27px !important;
     margin-top: 0;
+    letter-spacing: normal;
+    line-height: 25px;
+    padding-right: 75px;
+    padding-top: 44px;
+    text-align: left !important;
+    width: 100% !important;
   }
 
   .reducedManual {
-    font-size: 32px !important;
-    margin-bottom: 0 !important;
+    font-size: 37px !important;
+    margin-bottom: 30px !important;
+    margin: 0 auto;
     text-align: center !important;
     width: 85%;
+  }
+
+  .postSection {
+    .card-body {
+      float: none;
+
+      .card-text {
+        font-size: 16px !important;
+        margin-bottom: 55px;
+      }
+    }
   }
 
   .customHeading {
     margin-bottom: 0 !important;
   }
+
   .nav-pills {
     margin-left: 40%;
+  }
+
+  .gridBanner {
+    width: 100%;
   }
 }
 
@@ -537,6 +655,7 @@
 
   .bannerInfo {
     margin-top: -133%;
+    margin-bottom: 50px;
   }
 
   .bannerInfo .card {

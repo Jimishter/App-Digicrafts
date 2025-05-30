@@ -13,7 +13,7 @@
 
 <body class="bg-white">
     <div class="row">
-        <div class="container p-0">
+        <div class="container-fluid p-0">
             <div class="headerSection">
                 <div class="topSection">
                     <nav class="navbar navbar-expand-xl">
@@ -46,7 +46,7 @@
                         </div>
                     </nav>
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 float-end">
+                <div class="col-lg-6 col-xl-6 col-xxl-6 float-end">
                     <h1 class="ff-crafting card-title">Crafting Purpose-fit <br />Solutions</h1>
                 </div>
             </div>
@@ -93,7 +93,7 @@
                                     services
                                 </h1>
                                 <div class="card-body border-bottom">
-                                    <h5 class="card-title w-bold">LLM Apps</h5>
+                                    <h5 class="card-title fw-bold">LLM Apps</h5>
                                     <p>End to end GenAI powered modern digital solutions powered by third party LLMs and
                                         fine tuned as per organisation needs. Right from discovery, research</p>
                                 </div>
@@ -128,7 +128,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="casestudyImage col-sm-12 col-md-12 col-lg-9 col-xl-9 col-xxl-9">&nbsp;</div>
+                        <div class="casestudyImage col-sm-12 col-md-12 col-lg-9 col-xl-9 col-xxl-9">
+                            <img src="images/imgBannerInfo-mobile.png" class="imgBannerInfo" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -270,80 +272,82 @@
                     <div
                         class="col-0 col-sm-0 col-md-0 col-lg-5 col-xl-5 col-xxl-5 ms-0 ms-sm-0  ms-md-0  ms-lg-5  ms-xl-5  ms-xxl-5">
                         <div class="card-body bg-transparent border-0 p-55">
-                            <form action="/action_page.php" class="was-validated needs-validation">
-                                <table class="table bg-transparent mt-0 mt-sm-0  mt-md-0  mt-lg-5  mt-xl-5  mt-xxl-5">
-                                    <tbody>
-                                        <tr>
-                                            <td class="bg-transparent border-0 pe-3 py-2 position-relative">
+                            <!-- <form action="/action_page.php" class="was-validated needs-validation"> -->
+                            <table
+                                class="desktop-view table bg-transparent mt-0 mt-sm-0  mt-md-0  mt-lg-5  mt-xl-5  mt-xxl-5">
+                                <tbody>
+                                    <tr>
+                                        <td class="bg-transparent border-0 pe-3 py-2 position-relative">
+                                            <input class="form-control form-control-lg" type="text"
+                                                placeholder="First Name" aria-label=".form-control-lg" />
+                                        </td>
+                                        <td class="bg-transparent border-0 py-2">
+                                            <input class="form-control form-control-lg" type="text"
+                                                placeholder="Last Name" aria-label=".form-control-lg" />
+                                        </td>
+                                    </tr>
 
-                                                <input class="form-control form-control-lg" type="text"
-                                                    placeholder="First Name" aria-label=".form-control-lg" required />
-                                                <!-- <div class="invalid-feedback">
-                                                    Please enter a First Name.
-                                                </div> -->
-                                                <div class="valid-feedback">
-                                                    Looks good!
-                                                </div>
-                                            </td>
-                                            <td class="bg-transparent border-0 py-2">
-                                                <input class="form-control form-control-lg" type="text"
-                                                    placeholder="Last Name" aria-label=".form-control-lg" required />
-                                                <!-- <div class="invalid-feedback">
-                                                    Please enter a Last Name.
-                                                </div> -->
-                                                <div class="valid-feedback">
-                                                    Looks good!
-                                                </div>
-                                            </td>
-                                        </tr>
+                                    <tr>
+                                        <td class="bg-transparent border-0 pe-3">
+                                            <input class="form-control form-control-lg" type="text" placeholder="Email"
+                                                aria-label=".form-control-lg" id="email" />
+                                        </td>
+                                        <td class="bg-transparent border-0">
+                                            <input class="form-control form-control-lg" type="text" placeholder="Phone"
+                                                aria-label=".form-control-lg" min="1" max="10" step="1"
+                                                inputmode="numeric" pattern="\d{1,10}" maxlength="10" />
+                                        </td>
+                                    </tr>
 
-                                        <tr>
-                                            <td class="bg-transparent border-0 pe-3">
-                                                <input class="form-control form-control-lg" type="text"
-                                                    placeholder="Email" aria-label=".form-control-lg" id="email"
-                                                    required />
-                                                <div class="invalid-feedback">
-                                                    Please enter a valid email address (e.g., user@example.com).
-                                                </div>
-                                                <div class="valid-feedback">
-                                                    Looks good!
-                                                </div>
-                                            </td>
-                                            <td class="bg-transparent border-0">
-                                                <input class="form-control form-control-lg" type="text"
-                                                    placeholder="Phone" aria-label=".form-control-lg"  min="1" max="10" step="1"  inputmode="numeric" pattern="\d{1,10}" maxlength="10" required />
-                                                <div class="invalid-feedback">
-                                                    Please enter valid 10 Digit Number
-                                                </div>
-                                                <div class="valid-feedback">
-                                                    Looks good!
-                                                </div>
-                                            </td>
-                                        </tr>
+                                    <tr>
+                                        <td class="bg-transparent border-0" colspan="2">
+                                            <textarea class="form-control" placeholder="Write a message"
+                                                id="floatingTextarea" style="height: 100px"></textarea>
+                                        </td>
+                                    </tr>
 
-                                        <tr>
-                                            <td class="bg-transparent border-0" colspan="2">
-                                                <textarea class="form-control" placeholder="Write a message"
-                                                    id="floatingTextarea" style="height: 100px" required></textarea>
-                                                <!-- <div class="invalid-feedback">
-                                                    Please enter a Valid Message
-                                                </div> -->
-                                                <div class="valid-feedback">
-                                                    Looks good!
-                                                </div>
-                                            </td>
-                                        </tr>
+                                    <tr>
+                                        <td class="bg-transparent border-0" colspan="2">
+                                            <button type="submit"
+                                                class="btn-send btn btn-warning text-uppercase float-end px-5 py-3 rounded">Send</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
 
-                                        <tr>
-                                            <td class="bg-transparent border-0" colspan="2">
-                                                <button type="submit"
-                                                    class="btn-send btn btn-warning text-uppercase float-end px-5 py-3 rounded">Send</button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </form>
+                            <div class="mobile-view">
+                                <div class="row mb-5">
+                                    <input class="form-control form-control-lg" type="text" placeholder="First Name"
+                                        aria-label=".form-control-lg" />
+                                </div>
 
+                                <div class="row mb-5">
+                                    <input class="form-control form-control-lg" type="text" placeholder="Last Name"
+                                        aria-label=".form-control-lg" />
+                                </div>
+
+                                <div class="row mb-5">
+                                    <input class="form-control form-control-lg" type="text" placeholder="Email"
+                                        aria-label=".form-control-lg" id="email" />
+                                </div>
+
+                                <div class="row mb-5">
+                                    <input class="form-control form-control-lg" type="text" placeholder="Phone"
+                                        aria-label=".form-control-lg" min="1" max="10" step="1" inputmode="numeric"
+                                        pattern="\d{1,10}" maxlength="10" />
+                                </div>
+
+                                <div class="row mb-5">
+                                    <textarea class="form-control" placeholder="Write a message" id="floatingTextarea"
+                                        style="height: 100px"></textarea>
+                                </div>
+
+                                <div class="row mb-5">
+                                    <button type="submit"
+                                        class="btn-send btn btn-warning text-uppercase float-end px-5 py-3 rounded">Send</button>
+                                </div>
+                            </div>
+                            <!-- </form> -->
                         </div>
                     </div>
                     <!-- </div> -->
@@ -364,7 +368,6 @@
     <script src="scripts/bootstrap.min.js" type="text/javascript"></script>
     <script src="scripts/popper.min.js" type="text/javascript"></script>
     <script src="scripts/globalScripts.js" type="text/javascript"></script>
-    <script src="scripts/validation.js" type="text/javascript"></script>
 </body>
 
 </html>

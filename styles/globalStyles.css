@@ -171,8 +171,17 @@ body{
 }
 .casestudyImage{
     background: url(../images/imgBannerInfo.svg) no-repeat 47px 0;
-    background-size: 100% 100%;
+    background-size: 100%;
     height:438px;
+}
+.imgBannerInfo{
+    display: none;
+}
+.desktop-view{
+    display: block;
+}
+.mobile-view{
+    display: none;
 }
 .gridBanner{
     height: 437px;
@@ -180,6 +189,7 @@ body{
 }
 .gridBanner .card-body.bg-warning{
     background-color: #F7C108;
+    font-family: robotoExtraBold, Arial, Helvetica, sans-serif;
     position: relative;
     width: 100%;
     height: 100%;
