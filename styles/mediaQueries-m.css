@@ -421,6 +421,27 @@
     top: 66px;
     width: 100%;
   }
+  .customNavBar{
+    height: 69vh;
+    left: 0;
+    z-index: 10;
+    ul{
+      margin: 0;
+    }
+    .nav-item{
+      border-bottom: 1px solid #fff;
+      line-height: 90px;
+      margin-right: 1rem !important;
+      margin-left: 1rem !important;
+
+      .nav-link{
+        font-size: 30px !important;
+      }
+    }
+    .nav-item:last-child{
+      border-bottom: 0;
+    }
+  }
 
   .ff-crafting {
     font-size: 20px !important;
